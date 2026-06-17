@@ -115,3 +115,14 @@ footer {
     border-color: #45e6c3;
     color: #0a192f;
 }
+/* Project Cards */
+.project-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
