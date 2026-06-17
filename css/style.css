@@ -80,3 +80,38 @@ footer {
     transform: translateY(-5px);
     border-color: #64ffda;
 }
+/* Contact Form */
+.contact-form {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+}
+
+.form-control {
+    background-color: #0a192f;
+    border: 1px solid #1d3461;
+    color: #ccd6f6;
+}
+
+.form-control:focus {
+    background-color: #0a192f;
+    border-color: #64ffda;
+    color: #ccd6f6;
+    box-shadow: 0 0 0 0.2rem rgba(100, 255, 218, 0.25);
+}
+
+.form-label {
+    color: #ccd6f6;
+}
+
+.btn-primary {
+    background-color: #64ffda;
+    border-color: #64ffda;
+    color: #0a192f;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #45e6c3;
+    border-color: #45e6c3;
+    color: #0a192f;
+}
