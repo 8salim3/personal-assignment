@@ -191,3 +191,20 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* Testimonial Cards */
+.testimonial-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    border-left: 4px solid #64ffda;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    color: #ccd6f6;
+    font-style: italic;
+    line-height: 1.8;
+}
