@@ -80,3 +80,45 @@ window.addEventListener('scroll', function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+// Typing Animation for Hero Section
+const titles = [
+    "Computer Science Student",
+    "Web Developer",
+    "Quant Finance Enthusiast",
+    "Problem Solver"
+];
+
+let titleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeAnimation() {
+    const typedElement = document.getElementById('typedText');
+    if (!typedElement) return;
+
+    const currentTitle = titles[titleIndex];
+
+    if (isDeleting) {
+        typedElement.textContent = currentTitle.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedElement.textContent = currentTitle.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentTitle.length) {
+        setTimeout(() => isDeleting = true, 1500);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        titleIndex = (titleIndex + 1) % titles.length;
+    }
+
+    setTimeout(typeAnimation, isDeleting ? 50 : 100);
+}
+
+// Start typing animation
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('typedText')) {
+        typeAnimation();
+    }
+});
