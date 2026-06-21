@@ -152,3 +152,18 @@ footer {
     border-color: #64ffda;
     color: #64ffda;
 }
+/* Service Cards */
+.service-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+}
