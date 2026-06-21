@@ -65,3 +65,18 @@ window.onload = function () {
         if (btn) btn.textContent = '🌙 Dark Mode';
     }
 };
+// Back to Top Button
+window.addEventListener('scroll', function () {
+    const btn = document.getElementById('backToTop');
+    if (btn) {
+        if (window.scrollY > 300) {
+            btn.style.display = 'block';
+        } else {
+            btn.style.display = 'none';
+        }
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

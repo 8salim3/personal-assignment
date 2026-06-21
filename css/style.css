@@ -271,3 +271,24 @@ body.light-mode .text-muted {
 .social-links a:hover {
     color: #ffffff;
 }
+/* Back to Top Button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #45e6c3;
+}
