@@ -260,3 +260,14 @@ body.light-mode footer {
 body.light-mode .text-muted {
     color: #555555 !important;
 }
+/* Social Links */
+.social-links a {
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
