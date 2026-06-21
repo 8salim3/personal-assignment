@@ -292,3 +292,18 @@ body.light-mode .text-muted {
 #backToTop:hover {
     background-color: #45e6c3;
 }
+/* Stats Section */
+.stats-section {
+    background-color: #112240;
+}
+
+.stat-card {
+    background-color: #0a192f;
+    border: 1px solid #1d3461;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
