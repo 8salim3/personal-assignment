@@ -42,3 +42,26 @@ function validateForm() {
         document.getElementById('successMessage').classList.remove('d-none');
     }
 }
+// Dark/Light Mode Toggle
+function toggleMode() {
+    document.body.classList.toggle('light-mode');
+
+    const btn = document.getElementById('modeToggle');
+    if (document.body.classList.contains('light-mode')) {
+        btn.textContent = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+    } else {
+        btn.textContent = '☀️ Light Mode';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Remember theme on page load
+window.onload = function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+        const btn = document.getElementById('modeToggle');
+        if (btn) btn.textContent = '🌙 Dark Mode';
+    }
+};

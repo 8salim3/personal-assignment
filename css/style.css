@@ -219,3 +219,44 @@ footer {
 .resume-item:hover {
     transform: translateY(-3px);
 }
+/* Light Mode */
+body.light-mode {
+    background-color: #f0f4f8;
+    color: #1a1a2e;
+}
+
+body.light-mode .navbar {
+    background-color: #1a1a2e !important;
+}
+
+body.light-mode .hero {
+    background-color: #f0f4f8;
+}
+
+body.light-mode .education-card,
+body.light-mode .interest-card,
+body.light-mode .project-card,
+body.light-mode .service-card,
+body.light-mode .blog-card,
+body.light-mode .testimonial-card,
+body.light-mode .resume-item,
+body.light-mode .contact-form,
+body.light-mode .skill-badge {
+    background-color: #ffffff;
+    border-color: #d0d7de;
+}
+
+body.light-mode .form-control {
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border-color: #d0d7de;
+}
+
+body.light-mode footer {
+    background-color: #1a1a2e;
+    color: #f0f4f8;
+}
+
+body.light-mode .text-muted {
+    color: #555555 !important;
+}
