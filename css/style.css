@@ -208,3 +208,14 @@ footer {
     font-style: italic;
     line-height: 1.8;
 }
+/* Resume Items */
+.resume-item {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    border-left: 4px solid #64ffda;
+    transition: transform 0.3s ease;
+}
+
+.resume-item:hover {
+    transform: translateY(-3px);
+}
