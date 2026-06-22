@@ -332,3 +332,13 @@ body.light-mode .text-muted {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+/* Intro Card */
+.intro-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    border-top: 4px solid #64ffda;
+}
+
+.intro-avatar {
+    font-size: 4rem;
+}
