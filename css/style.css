@@ -342,3 +342,9 @@ body.light-mode .text-muted {
 .intro-avatar {
     font-size: 4rem;
 }
+/* Active Nav Link */
+.nav-link.active {
+    color: #64ffda !important;
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 2px;
+}
