@@ -122,3 +122,21 @@ document.addEventListener('DOMContentLoaded', function () {
         typeAnimation();
     }
 });
+// Project Filter
+function filterProjects(status) {
+    const items = document.querySelectorAll('.project-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button
+    buttons.forEach(btn => btn.classList.remove('active-filter'));
+    event.target.classList.add('active-filter');
+
+    // Filter projects
+    items.forEach(item => {
+        if (status === 'all' || item.dataset.status === status) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
