@@ -418,3 +418,9 @@ body.light-mode .text-muted {
     transform: translateY(-5px);
     border-color: #64ffda;
 }
+/* Pricing Note */
+.pricing-note {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    border-top: 4px solid #64ffda;
+}
