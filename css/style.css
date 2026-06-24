@@ -407,3 +407,14 @@ body.light-mode .text-muted {
     transform: translateY(-3px);
     border-color: #64ffda;
 }
+/* Fun Fact Cards */
+.fun-fact-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    transition: transform 0.3s ease;
+}
+
+.fun-fact-card:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
