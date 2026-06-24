@@ -396,3 +396,14 @@ body.light-mode .text-muted {
     border-radius: 20px;
     font-size: 0.85rem;
 }
+/* Contact Info Cards */
+.contact-info-card {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    border-color: #64ffda;
+}
