@@ -374,3 +374,16 @@ body.light-mode .text-muted {
 .timeline-item:hover {
     transform: translateX(5px);
 }
+/* Tech Badges */
+.tech-badge {
+    background-color: #112240;
+    border: 1px solid #1d3461;
+    color: #ccd6f6;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    border-color: #64ffda;
+    color: #64ffda;
+    transform: translateY(-3px);
+}
