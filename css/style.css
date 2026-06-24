@@ -387,3 +387,12 @@ body.light-mode .text-muted {
     color: #64ffda;
     transform: translateY(-3px);
 }
+/* Blog Tags */
+.blog-tag {
+    background-color: #112240;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
