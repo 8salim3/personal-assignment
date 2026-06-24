@@ -140,3 +140,22 @@ function filterProjects(status) {
         }
     });
 }
+// Animate Progress Bars
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.transition = 'width 1.5s ease';
+            bar.style.width = width;
+        }, 300);
+    });
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.progress-bar')) {
+        animateProgressBars();
+    }
+});
