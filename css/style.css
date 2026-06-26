@@ -429,3 +429,50 @@ body.light-mode .text-muted {
     border: 1px solid #1d3461;
     border-top: 4px solid #64ffda;
 }
+/* ===== Light mode contrast fixes (cards/text added after original light-mode block) ===== */
+body.light-mode .hero .lead,
+body.light-mode #typedText {
+    color: #1a1a2e;
+}
+
+body.light-mode .cursor {
+    color: #0a7d62;
+}
+
+/* Cards that were missing light-mode styling */
+body.light-mode .stat-card,
+body.light-mode .feature-card,
+body.light-mode .tech-badge,
+body.light-mode .contact-info-card,
+body.light-mode .fun-fact-card,
+body.light-mode .timeline-item,
+body.light-mode .intro-card,
+body.light-mode .pricing-note {
+    background-color: #ffffff;
+    border-color: #d0d7de;
+    color: #1a1a2e;
+}
+
+/* Section backgrounds that were hard-coded dark navy */
+body.light-mode .stats-section,
+body.light-mode .cta-section {
+    background-color: #e3e9f0;
+    border-color: #d0d7de;
+}
+
+/* Inline dark navy background on the home "Latest Blog" section */
+body.light-mode section[style*="112240"] {
+    background-color: #e3e9f0 !important;
+}
+
+/* Make the outline-light buttons visible on a light background */
+body.light-mode .btn-outline-light {
+    color: #1a1a2e;
+    border-color: #1a1a2e;
+}
+
+body.light-mode .btn-outline-light:hover {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
