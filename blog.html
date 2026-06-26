@@ -28,8 +28,8 @@
                     <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+                <button id="modeToggle" class="btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0" onclick="toggleMode()">☀️ Light Mode</button>
             </div>
-            <button id="modeToggle" class="btn btn-outline-light btn-sm ms-3" onclick="toggleMode()">☀️ Light Mode</button>
         </div>
     </nav>
 
@@ -56,7 +56,11 @@
                             <h5 class="accent-text">Why Sorting Algorithms Still Matter</h5>
                             <p class="text-muted small">June 10, 2026 · 4 min read</p>
                             <p>In an age where libraries handle everything for us, understanding sorting algorithms might seem unnecessary. But knowing how bubble sort, merge sort, and quicksort work under the hood gives you an edge when optimising real-world systems...</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            <div class="collapse" id="post1">
+                                <p>Bubble sort is rarely used in production, but it is the clearest way to understand comparison and swapping. Merge sort introduces the divide-and-conquer idea and guarantees O(n log n) time, which matters once your data grows. Quicksort is usually faster in practice because it sorts in place, but its worst case can degrade if pivots are chosen poorly.</p>
+                                <p>The real lesson is not memorising each algorithm, but learning to reason about time and space trade-offs so you can pick the right tool when a library default is not good enough.</p>
+                            </div>
+                            <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#post1">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +75,11 @@
                             <h5 class="accent-text">Getting Started with Quantitative Finance as a CS Student</h5>
                             <p class="text-muted small">June 5, 2026 · 6 min read</p>
                             <p>Quantitative finance sits at the intersection of mathematics, statistics, and computer science. As a CS student, you already have the programming foundation. What you need next is to understand derivatives, stochastic processes, and financial models...</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            <div class="collapse" id="post2">
+                                <p>A practical starting path is to strengthen probability and statistics, then learn how options and futures are priced. Hull's Options, Futures and Other Derivatives is a common first text. Alongside the theory, Python with Pandas and NumPy lets you backtest simple ideas on historical data.</p>
+                                <p>You do not need to master everything at once. Build one small project, such as a Monte Carlo option pricer, and let each project pull you into the next concept.</p>
+                            </div>
+                            <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#post2">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +94,11 @@
                             <h5 class="accent-text">What Aristotle's Eudaimonia Taught Me About Studying</h5>
                             <p class="text-muted small">May 28, 2026 · 5 min read</p>
                             <p>Aristotle believed that true happiness — eudaimonia — comes not from pleasure but from living a life of virtue and purpose. As a university student juggling assignments, exams, and personal goals, this philosophy has reshaped how I approach my studies...</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            <div class="collapse" id="post3">
+                                <p>Eudaimonia treats excellence as a habit built through repeated action rather than a feeling that arrives on its own. Applied to studying, it means showing up consistently and doing the work well even when motivation is low, because the character you build is the real reward.</p>
+                                <p>It reframes a hard week of revision not as suffering to endure, but as practice in becoming the kind of person who finishes what they start.</p>
+                            </div>
+                            <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#post3">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -101,7 +113,11 @@
                             <h5 class="accent-text">Bootstrap 5 Tips Every Beginner Should Know</h5>
                             <p class="text-muted small">May 20, 2026 · 3 min read</p>
                             <p>Bootstrap 5 is one of the most popular CSS frameworks out there, and for good reason. It speeds up development massively. Here are the tips I wish I had known when I first started using it for my web development projects...</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            <div class="collapse" id="post4">
+                                <p>First, learn the grid system properly: rows hold columns, and column classes like col-md-4 control width at different screen sizes. Second, lean on utility classes such as mb-4, text-center and d-flex before writing custom CSS. Third, Bootstrap 5 dropped the jQuery dependency, so the navbar toggle and collapse work with plain data attributes.</p>
+                                <p>Finally, always test at mobile width early. Bootstrap is responsive by default, but only if you use the grid and utilities as intended.</p>
+                            </div>
+                            <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#post4">Read More</button>
                         </div>
                     </div>
                 </div>
